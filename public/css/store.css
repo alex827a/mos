@@ -1,0 +1,199 @@
+.store__items-row {
+  padding: 0 7.5px;
+}
+
+.store__items-row [class*="col-"] {
+  padding-left: 7.5px;
+  padding-right: 7.5px;
+}
+
+.store__item {
+  display: block;
+  color: #222;
+  text-decoration: none;
+  text-align: center;
+  background: white;
+  padding: 30px;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  transition: border .2s;
+  margin-bottom: 15px;
+}
+
+.store__item:hover, .store__item:focus, .store__item:visited {
+  color: #222;
+  text-decoration: none;
+}
+
+.store__item:hover {
+  border: 1px solid #bbb;
+}
+
+.store__item img {
+  height: 200px;
+  margin-bottom: 30px;
+  object-fit: cover;
+}
+
+.store__item__name {
+  font-size: 1.2em;
+  font-weight: bold;
+  text-align: left;
+  margin-top: 15px;
+}
+
+.store__item__reviews {
+  text-align: left;
+  margin-top: 15px;
+}
+
+.store__item__prices {
+  text-align: left;
+  margin-top: 15px;
+}
+
+.store__item__prices b {
+  font-size: 1.2em;
+}
+
+.store__item__price {
+  margin-top: 7px;
+}
+
+.store__item__loan {
+  margin-top: 7px;
+}
+
+.store__item__loan b {
+  display: inline-block;
+  background: gold;
+  padding: 0 6px;
+}
+
+@media screen and (max-width: 991px) {
+  .store__item {
+    padding: 30px 15px;
+  }
+  .store__item img {
+    height: 130px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .store__item {
+    max-width: 360px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .store__item img {
+    height: 130px;
+  }
+}
+
+.store-single__basic-info {
+  background: white;
+}
+
+.store-single__basic-info__list {
+  padding-top: 30px;
+}
+
+.store-single__basic-info__list li {
+  list-style-type: none;
+  display: block;
+  padding: 3px 0;
+  background: url(../img/icons/check-black.svg) no-repeat left 7px;
+  background-size: 1em;
+  padding-left: 1.6em;
+}
+
+.store-single__pics {
+  border: 1px solid #EDEDED;
+  padding: 30px;
+}
+
+.store-single__pics_current {
+  max-height: 300px;
+  width: auto;
+  margin-bottom: 30px;
+}
+
+.store-single__pics__thumbs .col-fix-sm {
+  padding-top: 7.5px;
+  padding-bottom: 7.5px;
+}
+
+.store-single__pics__thumbs img {
+  height: 100px;
+  width: auto;
+  padding: 7.5px 25px;
+  border: 1px solid #EDEDED;
+  cursor: pointer;
+}
+
+.store-single__name {
+  font-size: 1.6em;
+}
+
+.store-single__prices {
+  font-size: 1.3em;
+  padding-top: 15px;
+}
+
+.store-single__prices__name {
+  color: #8a8a8a;
+}
+
+.store-single__prices__loan {
+  border-top: 1px solid #EDEDED;
+  padding-top: 7.5px;
+  margin-top: 7.5px;
+}
+
+.store-single__prices__loan input[type="number"] {
+  width: 42px;
+  padding: 1px 5px;
+  background: #EDEDED;
+  border: 1px solid #bbb;
+  text-align: center;
+  -moz-appearance: textfield;
+}
+
+.store-single__prices__loan input::-webkit-outer-spin-button,
+.store-single__prices__loan input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.store-single .loanSum {
+  display: none;
+}
+
+.store-single .loanPrice {
+  font-weight: bold;
+}
+
+@media screen and (max-width: 991px) {
+  .store-single__pics {
+    margin-bottom: 30px;
+  }
+  .store-single__pics__thumbs img {
+    height: 70px;
+    padding: 7.5px 10px;
+  }
+}
+
+.store-single__details .store-single__name {
+  margin-bottom: 2em;
+}
+
+.store-single__details__title {
+  font-size: 1.6em;
+  font-weight: 300;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.store-single__details__row {
+  border-bottom: 1px solid #EDEDED;
+  padding: 15px 0;
+}

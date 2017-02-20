@@ -1,0 +1,174 @@
+
+.bottom-news {
+
+	.section-title {
+		display: block;
+		margin-bottom: 2em;
+		color: $black;
+		text-decoration: none;
+
+		&:hover, &:focus, &:visited {
+			color: $black;
+			text-decoration: none;
+		}
+
+	}
+
+	@media screen and (max-width: 767px) {
+		.section-title {
+			margin-bottom: 1em;
+		}		
+	}
+
+	&__col {
+		padding: 15px;
+	}
+
+	&__item {
+		color: $black;
+		text-decoration: none;
+
+		&:hover, &:focus, &:visited {
+			color: $black;
+			text-decoration: none;
+		}
+
+		&__img {
+			width: 40%;
+			height: 100px;
+			object-fit: cover;
+			border-radius: $radius-sm;
+			float: left;
+		}
+
+		&__title {
+			display: block;
+			width: 60%;
+			float: left;
+			padding-left: 15px;
+			color: $black;
+			text-decoration: none;
+			opacity: .7;
+			transition: opacity .2s;
+			font-size: 1.3em;
+
+			&:hover, &:focus, &:visited {
+				color: $black;
+				text-decoration: none;
+			}
+		}
+
+		&:hover &__title {
+			opacity: 1;
+		}
+	}
+}
+
+
+
+
+
+.blog {
+	overflow: auto;
+
+	&__pages {
+
+		.btn {
+			margin-right: 7px;
+		}
+	}
+}
+
+.blog__items {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.blog__item {
+	color: $black;
+	text-decoration: none;
+	line-height: 1;
+
+	&:hover, &:focus, &:visited {
+		color: $black;
+		text-decoration: none;
+	}
+
+	&:hover {
+		color: $primary;
+	}
+
+	&__wrap {
+		flex-basis: 47%;
+		margin-bottom: 60px;
+	}
+
+	&__details {
+		margin-top: 15px;
+		color: $dark-gray;
+	}
+
+	&__title {
+		margin-top: 15px;
+		font-size: 1.6em;
+		font-weight: bold;
+		line-height: 1.4;
+	}
+
+	img {
+		border-radius: $radius-sm;
+		height: 300px;
+		width: 100%;
+		object-fit: cover;
+	}
+
+
+	@media screen and (max-width: 991px) {
+
+		img {
+			height: 190px;
+		}
+	}
+
+	@media screen and (max-width: 767px) {
+
+		&__wrap {
+			flex-basis: 100%;
+		}
+
+		img {
+			height: auto;
+		}
+	}
+
+}
+
+.blog-single {
+
+	&__title {
+		margin-bottom: 30px;
+	}
+
+	p {
+		font-size: 1.2em;
+		max-width: 767px;
+		margin: 0 auto;
+		margin-bottom: 30px;
+	}
+
+	h3 {
+		font-size: 1.6em;
+		font-weight: bold;
+		max-width: 767px;
+		margin: auto;
+		padding-top: 30px;
+		margin-bottom: 30px;
+	}
+
+	&__pic {
+		width: 100%;
+		margin-bottom: 50px;
+		margin-top: 20px;
+	}
+}

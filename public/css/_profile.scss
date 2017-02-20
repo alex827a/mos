@@ -1,0 +1,449 @@
+.user-bar {
+	overflow: visible;
+	position: fixed;
+	height: 64px;
+	width: 100%;
+	background: white;
+	box-shadow: $box-shadow;
+	margin: 0;
+	z-index: 1999;
+
+	.container, .row {
+		height: 100%;
+	}
+
+	&__item {
+		padding-left: 30px;
+	}
+
+	&__notif {
+		width: 24px;
+		height:24px;
+		background: url(../img/icons/notif-empty-black.svg) no-repeat center;
+		background-size: 100%;
+		cursor: pointer;
+		position: relative;
+		user-select: none;
+
+		&__parent {
+			position: relative;
+		}
+
+		&_new {
+			background: url(../img/icons/notif-black.svg) no-repeat center;
+			background-size: 100%;
+
+			span {
+				text-align: center;
+				color: white;
+				display: block;
+				position: absolute;
+				top: -5px; right: -5px;
+				font-size: 11px;
+				line-height: 18px;
+				background: red;
+				width: 18px; height: 18px;
+				border-radius: 50%;
+			}
+		}
+
+		&__dropdown {
+			width: 300px;
+			box-shadow: $box-shadow;
+			border-radius: $radius-sm;
+			background: white;
+			position: absolute;
+			right: -150px;
+			top: 3em;
+			padding: 15px;
+			display: none;
+		}
+
+		&__item {
+			display: block;
+			color: $black;
+			text-decoration: none;
+			padding: 7.5px 0;
+			opacity: .7;
+			border-bottom: 1px solid $light-gray;
+
+			&:focus, &:visited {
+				color: $black;
+				text-decoration: none;
+			}
+
+			&:hover {
+				color: $primary;
+				text-decoration: none;
+			}
+
+			&_new {
+				font-weight: 600;
+				opacity: 1;
+			}
+		}
+	}
+
+
+
+	&__lm {
+		width: 24px;
+		height:24px;
+		background: url(../img/icons/lm-empty-black.svg) no-repeat center;
+		background-size: 100%;
+		cursor: pointer;
+		position: relative;
+		user-select: none;
+
+		&__parent {
+			position: relative;
+		}
+
+		&__dropdown {
+			width: 300px;
+			box-shadow: $box-shadow;
+			border-radius: $radius-sm;
+			background: white;
+			position: absolute;
+			right: -150px;
+			top: 3em;
+			overflow: auto;
+			display: none;
+		}
+
+		&__item {
+			display: block;
+			color: $black;
+			text-decoration: none;
+			padding: 7.5px 0;
+			opacity: .7;
+			padding: 15px;
+			margin: 3px 0;
+
+			&:focus, &:visited {
+				color: $black;
+				text-decoration: none;
+			}
+
+			&:hover {
+				color: $black;
+				text-decoration: none;
+				background: $light-gray;
+			}
+
+			&:hover &__message {
+				color: black;
+				text-decoration: none;
+			}
+
+			&_new {
+				opacity: 1;
+			}
+
+			&_new &__message {
+				font-weight: 600;
+				opacity: 1;
+			}
+		}
+
+
+		&__details {
+			margin-bottom: 7px;
+
+			&__pic {
+				width: 24px;
+				height: 24px;
+				border-radius: 12px;
+				object-fit: cover;
+				display: inline-block;
+				margin-right: 7px;
+			}
+		}
+
+	}
+
+	&__lm_new {
+		background: url(../img/icons/lm-black.svg) no-repeat center;
+		background-size: 100%;
+
+		span {
+			text-align: center;
+			color: white;
+			display: block;
+			position: absolute;
+			top: -5px; right: -5px;
+			font-size: 11px;
+			line-height: 18px;
+			background: red;
+			width: 18px; height: 18px;
+			border-radius: 50%;
+		}
+	}
+
+	&__name {
+		display: inline-block;
+		font-weight: 600;
+		cursor: default;
+
+		&__parent {
+			padding-right: 15px;
+		}
+	}
+
+	&__pic {
+		display: inline-block;
+		width: 24px;
+		height: 24px;
+		object-fit: cover;
+		border-radius: 12px;
+		margin-left: 7px;
+	}
+
+	.dropdown-icon_black {
+		margin-left: 7px;
+	}
+
+	&_not-logged-in {
+		text-align: right;
+
+		a {
+			display: inline-block;
+			line-height: 64px;
+			margin-left: 15px;
+		}
+	}
+}
+
+@media screen and (max-width: 767px) {
+
+	.user-bar {
+		position: relative;
+	}
+
+	.user-bar, .user-bar .container, .user-bar__notif__parent, .user-bar__lm__parent {
+		position: static;
+	}
+
+	.user-bar__notif, .user-bar__lm {
+		
+		&__dropdown {
+			width: 100%;
+			overflow: auto;
+			right: 0; left: 0; top: 64px; bottom: 0;
+			z-index: 1300;
+		}
+	}
+
+	.user-bar__name__parent .dropdown {
+		z-index: 1300;
+	}
+
+}
+
+
+.reg-form {
+
+	.container {
+		position: initial;
+		overflow: auto;
+	}
+
+	&__form {
+		max-width: 560px;
+		margin: auto;
+		background: $light-gray;
+		padding: 60px;
+		border-radius: $radius;
+	}
+
+	&__input {
+		margin-bottom: 15px;
+	}
+
+	h3 {
+		margin-bottom: 1em;
+	}
+
+	@media screen and (max-width: 639px) {
+
+		&__form {
+			padding: 30px 20px;
+		}
+
+		h3 {
+			font-size: 1.2em;
+			margin-bottom: 30px;
+		}
+
+	}
+
+}
+
+
+.check-status__result {
+	max-width: 560px;
+	margin: 60px auto;
+	padding: 30px;
+	background: $light-gray;
+	border-radius: $radius;
+	box-shadow: $box-shadow-sm;
+	display: none;
+}
+
+
+.profile-page {
+
+	.header__login, .top-menu__links__profile-link {
+		display: none;
+	}
+
+	&__box {
+		margin-bottom: 30px;
+	}
+}
+
+.user-menu {
+	border-bottom: 1px solid rgba(0,0,0,.1);
+	user-select: none;
+
+	&__item {
+		display: inline-block;
+		text-transform: uppercase;
+		margin-right: 25px;
+	}
+
+	.disabled {
+		pointer-events: none;
+		opacity: .5;
+	}
+}
+
+.profile-header {
+	line-height: 1;
+
+	.container {
+		position: relative;
+	}
+
+	&__edit-btn {
+		position: absolute;
+		top: 0;
+		right: 15px;
+	}
+
+	&__pic {
+		padding: 0 15px;
+		position: relative;
+
+		img {
+			width: 80px;
+			height: 80px;
+			border-radius: $radius;
+		}
+
+		&__change {
+			position: absolute;
+			bottom: -18px;
+			right: 50%;
+			width: 36px;
+			height: 36px;
+			transform: translateX(50%);
+			background: white url(../img/icons/camera-black.png) no-repeat center center;
+			background-size: 18px;
+			border-radius: 50%;
+			cursor: pointer;
+			box-shadow: $box-shadow-sm;
+		}
+	}
+
+	&__name {
+		font-size: 2em;
+		margin-bottom: 7px;
+
+		&__title {
+			color: $dark-gray;
+		}
+	}
+}
+
+.profile__contacts {
+
+
+	&__item {
+		padding-bottom: 1em;
+	}
+}
+
+.my-profile__private-info {
+	position: relative;
+
+	.box-title {
+
+		.tip {
+			margin-left: 7px;
+		}
+	}
+
+	&__item {
+		margin-bottom: 7px;
+
+		b {
+			display: inline-block;
+			margin-right: 15px;
+		}
+	}
+}
+
+.my-services {
+	overflow: auto;
+
+	.box-title {
+		margin-bottom: 0;
+	}
+
+	&__item {
+		display: block;
+		background: #fafafa;
+		margin-bottom: 7px;
+		text-decoration: none;
+		padding: 15px;
+		color: $black;
+
+		&:hover, &:focus, &:visited {
+			color: $black;
+			text-decoration: none;
+		}
+
+		&:hover {
+			background: #f5f5f5;
+		}
+
+		&__time {
+			color: $dark-gray;
+			font-weight: bold;
+
+			b {
+				color: $black;
+			}
+		}
+
+		&__service {
+			margin: 10px 0;
+		}
+
+		&__status_proc {
+			font-weight: bold;
+			color: $black;
+		}
+		&__status_ok {
+			font-weight: bold;
+			color: green;
+		}
+		&__status_fail {
+			font-weight: bold;
+			color: red;
+		}
+
+	}
+
+}

@@ -1,0 +1,1067 @@
+.service__top {
+
+	[class*="-auto"] {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	&__city {
+		select, option {
+			font-size: inherit;
+			width: auto;
+			padding: 7px;
+			margin-left: 15px;
+		}
+	}
+
+	&__search {
+
+		input {
+			display: inline-block;
+			vertical-align: middle;
+			height: 48px;
+		}
+
+		input[type="search"] {
+			background: transparent;
+			width: 320px;
+			border-bottom: 1px solid $gray;
+		}
+
+		input[type="submit"] {
+			width: 48px;
+			height: 48px;
+			background: transparent url(../img/icons/search-black.svg) no-repeat center;
+			background-size: 24px;
+			opacity: .7;
+			transition: opacity .2s;
+
+			&:hover {
+				opacity: 1;
+			}
+		}		
+	}
+
+	@media screen and (max-width: 991px) {
+
+		&__search {
+			width: 100%;
+			margin-top: 30px;
+
+			input {
+				display: block;
+				height: 48px;
+				float: left;
+			}
+
+			input[type="search"] {
+				background: transparent;
+				width: calc(100% - 54px);
+				border-bottom: 1px solid $gray;
+			}
+	
+		}
+
+		&__city {
+			font-size: 1em;
+		}
+
+	}
+
+}
+
+
+.service__banner {
+	border: 1px solid $gray;
+	padding: 30px;
+	border-radius: $radius-sm;
+	background: rgba(255, 255, 255, .7);
+	height: 100%;
+	margin-bottom: 30px;
+
+	&__title {
+		font-size: 1.6em;
+		margin-bottom: 1em;
+		font-weight: bold;
+	}
+
+	@media screen and (max-width: 767px) {
+		padding: 30px 15px;
+	}
+
+}
+
+.payments {
+}
+
+.payments__banner {
+
+	&__mobile {
+
+		&__brands {
+			img {
+				height: 72px;
+				display: inline-block;
+				vertical-align: middle;
+				padding: 10px;
+			}
+		}
+
+		&__form {
+			overflow: auto;
+
+			.col-auto {
+				padding-left: 15px;
+				padding-right: 15px;
+			}
+
+			input[type="tel"] {
+				width: 100%;
+				height: 50px;
+				border-bottom: 2px solid $primary;
+				vertical-align: middle;
+				display: block;
+				float: left;
+				margin-right: 15px;
+				background: transparent;
+			}
+		}
+	}
+
+	&__utilities {
+
+		.btn {
+			margin-right: 15px;
+			margin-bottom: 15px;
+		}
+	}
+
+	@media screen and (max-width: 575px) {
+
+		&__mobile {
+
+			&__form {
+
+				input[type="tel"] {
+					border: 1px solid $primary;
+					border-radius: $radius-sm;
+					margin-bottom: 15px;
+					float: none;
+					margin-right: 0;
+					padding-left: 15px;
+				}
+			}
+		}
+
+	}
+
+}
+
+.payments__cats {
+
+	&__item {
+		display: block;
+		padding: 30px;
+		text-align: center;
+
+		a {
+			display: block;
+			height: 100%;
+			color: $black;
+			text-decoration: none!important;
+			border: 1px solid transparent;
+			transition: background .2s, border .2s;
+			padding: 30px 15px;
+			border-radius: $radius;
+
+			&:hover {
+				border: 1px solid $light-gray2;
+				background: white;
+			}
+		}
+
+		img {
+			max-width: 70px;
+			margin: auto;
+		}
+
+		p {
+			padding-top: 15px;
+			word-wrap: break-word;
+		}
+	}
+
+	@media screen and (max-width: 479px) {
+
+		&__item {
+			padding: 15px;
+			text-align: center;
+
+			a {
+				height: 100%;
+				padding: 15px 7px;
+				border-radius: $radius-sm;
+			}
+
+			img {
+				max-width: 50px;
+			}
+
+			p {
+				padding-top: 15px 7px;
+				word-wrap: break-word;
+			}
+		}
+
+	}
+}
+
+.payments__businesses {
+
+	&__item {
+		display: block;
+		padding: 30px;
+		text-align: center;
+
+		a {
+			display: block;
+			height: 100%;
+			color: $black;
+			text-decoration: none!important;
+			border: 1px solid transparent;
+			transition: background .2s, border .2s;
+			padding: 30px 15px;
+			border-radius: $radius;
+
+			&:hover {
+				border: 1px solid $light-gray2;
+				background: white;
+			}
+		}
+
+		img {
+			max-width: 110px;
+			margin: auto;
+		}
+
+		p {
+			padding-top: 15px;
+			word-wrap: break-word;
+		}
+	}
+
+	@media screen and (max-width: 479px) {
+
+		&__item {
+			padding: 15px;
+			text-align: center;
+
+			a {
+				height: 100%;
+				padding: 15px 7px;
+				border-radius: $radius-sm;
+			}
+
+			img {
+				max-width: 80px;
+			}
+
+			p {
+				padding-top: 15px 7px;
+				word-wrap: break-word;
+			}
+		}
+
+	}
+
+}
+
+.payment {
+
+	&__details__item {
+		margin-bottom: 15px;
+		font-size: 16px;
+	}
+
+	&__sidebar-brief {
+		background: rgba(255,255,255,.8);
+		border-radius: $radius-sm;
+		padding: 15px;
+		margin-bottom: 60px;
+
+		p {
+			padding-top: 15px;
+			padding-bottom: 15px;
+			border-bottom: 1px solid $light-gray2;
+
+			&:last-child {
+				border-bottom: none;
+			}
+		}
+	}
+
+}
+
+.payment__form {
+
+	&__block {
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+
+}
+
+
+
+
+
+
+$loan-color: $green;
+$insurance-color: $primary;
+$deposit-color: $primary;
+
+.landing {
+
+	&__banner {
+		text-align: center;
+		padding-top: 120px;
+		padding-bottom: 120px;
+
+		H1 {
+			margin-bottom: 1em;
+			font-weight: 300;
+		}
+
+		H3 {
+			margin-bottom: 2em;
+		}
+
+		@media screen and (max-width: 639px) {
+			H1 {
+				margin-bottom: .5em;
+			}
+
+			H3 {
+				margin-bottom: 1em;
+			}
+		}
+	}
+
+	&__anchors {
+		overflow: auto;
+
+		a {
+			font-size: 1.2em;
+			font-weight: 300;
+			display: block;
+			float: left;
+			padding: 2em 1em;
+			text-decoration: none;
+			color: $black;
+			border-bottom: 2px solid transparent;
+		}
+
+		@media screen and (max-width: 767px) {
+			a {
+				float: none;
+				font-size: 1em;
+				padding: 1em .5em;		
+			}
+		}
+
+	}
+
+	&__block {
+
+		H1, H2, H3 {
+			margin-bottom: 1em;
+		}
+
+		H2 {
+			font-size: 3em;
+		}
+
+		&__title {
+			font-size: 3em;
+			font-weight: 300;
+			text-align: center;
+			margin-bottom: 1em;
+		}
+
+		&__par {
+			font-size: 1.4em;
+			margin-bottom: 1em;
+			max-width: 900px;
+			margin-right: auto;
+			margin-left: auto;
+		}
+
+		&__par2 {
+			font-size: 1em;
+			margin-bottom: 1em;
+			max-width: 700px;
+			margin-right: auto;
+			margin-left: auto;
+		}
+
+		&__moar {
+			font-size: 1.6em;
+			padding-top: 2em;
+
+			a {
+				text-decoration: none!important;
+			}
+		}
+
+		@media screen and (max-width: 639px) {
+
+			H2 {
+				font-size: 2em;
+			}
+
+			H3 {
+				font-size: 1.6em;
+			}
+
+			&__title {
+				font-size: 1.6em;
+			}
+
+			&__par {
+				font-size: 1.1em;
+			}		
+
+		}
+	}
+
+	&__basic {
+		overflow: auto;
+
+		H3 {
+			font-weight: 300;
+		}
+
+
+		&__partners {
+			user-select: none;
+			margin-top: 60px;
+
+			&__item {
+				font-size: 1.5em;
+				display: inline-block;
+				border: 1px solid $light-gray;
+				padding: 15px;
+				border-radius: $radius;
+				margin: 10px;
+				@include black-link();
+
+				img {
+					height: 2em;
+					margin-right: 10px;
+				}
+			}
+		}
+
+	}
+
+	&__advantages {
+
+		&__illustr {
+			width: 100%;
+			margin-bottom: 30px;
+		}
+
+		&__list {
+			
+			text-align: left;
+			font-size: 1.6em;
+			overflow: auto;
+
+			.item {
+				overflow: auto;
+				clear: both;
+				margin-bottom: 30px;
+
+				p {
+					overflow: hidden;
+				}
+			}
+
+			.left-icon {
+				width: 64px;
+				float: left;
+				margin-right: 1em;
+				padding: 15px;
+				border: 1px solid $loan-color;
+				border-radius: 50%;
+			}
+		}
+	}
+
+
+}
+
+.loan-landing {
+
+	&__banner {
+		background: url(../img/loan-banner.jpg) no-repeat center;
+		background-size: cover;
+		color: white;
+	}
+
+	&__anchors {
+		a:hover {
+				border-bottom: 2px solid $loan-color;
+		}
+	}
+
+	&__basic {
+		border-bottom: 1px solid $light-gray;
+	}
+
+	&__advantages {
+
+		&__percent {
+			height: 180px;
+			width: 180px;
+			border-radius: 50%;
+			background: $green;
+			color: white;
+			margin: auto;
+			margin-bottom: 24px;
+			user-select: none;
+			cursor: default;
+
+			table {
+				height: 100%;
+				width: 100%;
+				font-size: 24px;
+				font-weight: bold;
+
+				span {
+					font-size: 64px;
+					font-weight: 300;
+				}
+			}
+		}
+
+	}
+
+	&__howtoget {
+		min-height: 450px;
+
+		&__steps {
+			padding-top: 15px;
+			padding-bottom: 15px;
+		}
+
+		&__step {
+			font-size: 32px;
+			width: 96px;
+			height: 96px;
+			line-height: 96px;
+			margin:auto;
+			margin-bottom: 30px;
+			border: 1px solid $black;
+			border-radius: 50%;
+			cursor: pointer;
+			transition: border .2s, color .2s;
+
+			&:hover {
+				color: $loan-color;
+				border-color: $loan-color;
+			}
+
+			&__title {
+				font-size: 1.6em;
+				margin-top: 2em;
+				margin-bottom: 1em;
+				max-width: 800px;
+				margin-left: auto;
+				margin-right: auto;
+			}
+
+			&__btn_active {
+				color: $loan-color;
+				border-color: $loan-color;
+			}
+		}
+
+		&__step1 {
+
+			&__list {
+				max-width: 500px;
+				margin: 2em auto;
+				text-align: left;
+				border: 1px solid $gray;
+				padding: 30px;
+			}
+
+			ul {
+
+				li {
+					padding-bottom: 10px;
+				}
+
+				span {
+					color: $dark-gray;
+				}
+			}
+
+		}
+
+		&__step1, &__step2, &__step3 {
+			font-size: 1.2em;
+		}
+
+		&__step2, &__step3 {
+			display: none;
+		}
+
+		@media screen and (max-width: 767px) {
+			&__step2, &__step3 {
+				display: block;
+			}
+			&__steps {
+				display: none;
+			}
+		}
+
+		.smaller {
+			border-top: 1px solid #eee;
+			padding-top: 1em;
+			margin-top: 1em;
+			display: inline-block;
+		}
+	}
+
+}
+
+.insurance-landing {
+
+	&__banner {
+		background: url(../img/insurance-banner.jpg) no-repeat center;
+		background-size: cover;
+		color: white;
+	}
+
+	&__anchors {
+		a:hover {
+			border-bottom: 2px solid $insurance-color;
+		}
+	}
+
+	&__menu {
+		background: $insurance-color;
+
+		a {
+			display: inline-block;
+			padding: 20px 30px;
+			color: white;
+
+			&:hover {
+				color: white;
+				text-decoration: none;
+				background: lighten($insurance-color, 10%);
+			}
+		}
+	}
+
+	&__advantages {
+
+		&__percent {
+			height: 180px;
+			width: 180px;
+			border-radius: 50%;
+			background: $insurance-color;
+			color: white;
+			margin: auto;
+			margin-bottom: 24px;
+			user-select: none;
+			cursor: default;
+
+			table {
+				height: 100%;
+				width: 100%;
+				font-size: 24px;
+				font-weight: bold;
+
+				span {
+					font-size: 64px;
+					font-weight: 300;
+				}
+			}
+		}
+
+		&__list {
+			
+			text-align: left;
+			font-size: 1.4em;
+			overflow: auto;
+
+			.item {
+				overflow: auto;
+				clear: both;
+				margin-bottom: 30px;
+
+				p {
+					overflow: hidden;
+				}
+			}
+
+			.left-icon {
+				width: 64px;
+				float: left;
+				margin-right: 1em;
+				padding: 15px;
+				border: 1px solid $loan-color;
+				border-radius: 50%;
+			}
+		}
+
+		&__illustr {
+			background: $gray;
+			width: 100%;
+			height: 350px;
+			margin-bottom: 30px;
+		}
+	}
+
+	&__howtoget {
+		min-height: 450px;
+
+		&__steps {
+			padding-top: 15px;
+			padding-bottom: 15px;
+		}
+
+		&__step {
+			font-size: 32px;
+			width: 96px;
+			height: 96px;
+			line-height: 96px;
+			margin:auto;
+			margin-bottom: 30px;
+			border: 1px solid $black;
+			border-radius: 50%;
+			cursor: pointer;
+			transition: border .2s, color .2s;
+
+			&:hover {
+				color: $insurance-color;
+				border-color: $insurance-color;
+			}
+
+			&__title {
+				font-size: 1.6em;
+				margin-top: 2em;
+				margin-bottom: 1em;
+				max-width: 800px;
+				margin-left: auto;
+				margin-right: auto;
+			}
+
+			&__btn_active {
+				color: $insurance-color;
+				border-color: $insurance-color;
+			}
+		}
+
+		&__step1 {
+
+			&__list {
+				max-width: 600px;
+				margin: 2em auto;
+				text-align: left;
+				border: 1px solid $gray;
+				padding: 30px;
+			}
+
+			ul {
+
+				li {
+					padding-bottom: 10px;
+				}
+
+				span {
+					color: $dark-gray;
+				}
+			}
+
+		}
+
+		&__step1, &__step2 {
+			font-size: 1.2em;
+		}
+
+		&__step2 {
+			display: none;
+		}
+
+		@media screen and (max-width: 767px) {
+			&__step1, &__step2, &__step3 {
+				display: block;
+			}
+			&__steps {
+				display: none;
+			}
+		}
+
+		.smaller {
+			border-top: 1px solid #eee;
+			padding-top: 1em;
+			margin-top: 1em;
+			display: inline-block;
+		}
+	}
+
+
+}
+
+
+.deposit-landing {
+
+	&__banner {
+		background: url(../img/deposit-banner.jpg) no-repeat center;
+		background-size: cover;
+		color: white;
+	}
+
+	&__anchors {
+		a:hover {
+			border-bottom: 2px solid $deposit-color;
+		}
+	}
+
+	&__advantages {
+
+		&__percent {
+			height: 180px;
+			width: 180px;
+			border-radius: 50%;
+			background: $deposit-color;
+			color: white;
+			margin: auto;
+			margin-bottom: 24px;
+			user-select: none;
+			cursor: default;
+
+			table {
+				height: 100%;
+				width: 100%;
+				font-size: 24px;
+				font-weight: bold;
+
+				span {
+					font-size: 64px;
+					font-weight: 300;
+				}
+			}
+		}
+
+		&__list {
+			
+			text-align: left;
+			font-size: 1.4em;
+			overflow: auto;
+
+			.item {
+				overflow: auto;
+				clear: both;
+				margin-bottom: 30px;
+
+				p {
+					overflow: hidden;
+				}
+			}
+
+			.left-icon {
+				width: 64px;
+				float: left;
+				margin-right: 1em;
+				padding: 15px;
+				border: 1px solid $loan-color;
+				border-radius: 50%;
+			}
+		}
+
+	}
+
+	&__howtoget {
+		min-height: 450px;
+
+		&__steps {
+			padding-top: 15px;
+			padding-bottom: 15px;
+		}
+
+		&__step {
+			font-size: 32px;
+			width: 96px;
+			height: 96px;
+			line-height: 96px;
+			margin:auto;
+			margin-bottom: 30px;
+			border: 1px solid $black;
+			border-radius: 50%;
+			cursor: pointer;
+			transition: border .2s, color .2s;
+
+			&:hover {
+				color: $deposit-color;
+				border-color: $deposit-color;
+			}
+
+			&__title {
+				font-size: 1.6em;
+				margin-top: 2em;
+				margin-bottom: 1em;
+				max-width: 800px;
+				margin-left: auto;
+				margin-right: auto;
+			}
+
+			&__btn_active {
+				color: $deposit-color;
+				border-color: $deposit-color;
+			}
+		}
+
+		&__step1 {
+
+			&__list {
+				max-width: 500px;
+				margin: 2em auto;
+				text-align: left;
+				border: 1px solid $gray;
+				padding: 30px;
+			}
+
+			ul {
+
+				li {
+					padding-bottom: 10px;
+				}
+
+				span {
+					color: $dark-gray;
+				}
+			}
+
+		}
+
+		&__step1, &__step2, &__step3 {
+			font-size: 1.2em;
+		}
+
+		&__step2, &__step3 {
+			display: none;
+		}
+
+		@media screen and (max-width: 767px) {
+			&__step1, &__step2, &__step3 {
+				display: block;
+			}
+			&__steps {
+				display: none;
+			}
+		}
+
+		.smaller {
+			border-top: 1px solid #eee;
+			padding-top: 1em;
+			margin-top: 1em;
+			display: inline-block;
+		}
+	}
+
+}
+
+@media screen and (min-width: 992px) {
+
+	.landing__block .container {
+		padding-right: 60px;
+		padding-left: 60px;
+	}
+
+}
+
+
+/* === CARDS === */
+
+.cards__banners {
+	margin-bottom: 90px;
+}
+
+.cards__banner {
+	display: block;
+	max-width: 1110px;
+	margin: auto;
+	background: white;
+	padding: 45px;
+	margin-bottom: 30px;
+	@include black-link();
+	transition: box-shadow .2s;
+
+	&:hover {
+		box-shadow: $box-shadow-sm;
+	}
+
+	&__title {
+		font-size: 1.6em;
+		font-weight: 600;
+		margin-bottom: 30px;
+
+		p {
+			font-size: 14px;
+			font-weight: 300;
+		}
+	}
+
+	&__list {
+		padding-right: 60px;
+		font-size: 14px;
+
+		p {
+			background: url(../img/icons/check-black.svg) no-repeat left 5px;
+			background-size: 1em;
+			padding-left: 1.6em;
+			margin-bottom: 7px;
+		}
+	}
+
+	&__pic {
+
+		img {
+			display: block;
+			width: 374px;
+			max-width: 100%;
+			margin: auto;
+		}
+		
+	}
+
+	@media screen and (min-width: 1110px) {
+		border-radius: $radius;
+	}
+
+	@media screen and (max-width: 767px) {
+
+		&__pic {
+
+			img {
+				margin-bottom: 30px;
+			}			
+		}
+	}
+
+	@media screen and (max-width: 479px) {
+		padding: 30px;
+	}
+
+	@media screen and (max-width: 359px) {
+		padding: 30px 15px;
+	}
+}
+
+/* === / CARDS === */

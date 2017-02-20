@@ -1,0 +1,201 @@
+<meta charset="utf-8">
+
+<div id="form-deposit-micro" class="form form-deposit form-deposit-micro" autocomplete="autocomplete">
+  <div class="container">
+
+      <div class="deposit-landing__form__sum landing__form__slider landing__form__block deposit-landing__form__block_full">
+            <b>Сумма</b>
+            <div class="deposit-landing__form__sum__slider slider-padding">
+              <div class="layout-slider">
+                <input id="depositLandingSumSlider" type="slider" name="area" value="0;10000000" />
+              </div>
+              <script type="text/javascript" charset="utf-8">
+                jQuery("#depositLandingSumSlider").slider({ from: 0, to: 10000000, scale: [0, 10000000], limits: false, step: 1, dimension: ' тенге', skin: "round_plastic" });
+              </script>                      
+            </div>
+      </div>
+
+      <div class="deposit-landing__form__period landing__form__slider landing__form__block landing__form__block_full deposit-landing__form__block_full">
+            <b>Желаемый срок</b>
+            <div class="deposit-landing__form__period__slider slider-padding">
+              <div class="layout-slider">
+                <input id="depositLandingPeriodSlider" type="slider" name="area" value="0;120" />
+              </div>
+              <script type="text/javascript" charset="utf-8">
+                jQuery("#depositLandingPeriodSlider").slider({ from: 0, to: 120, scale: [0, 120], limits: false, step: 1, dimension: ' месяцев', skin: "round_plastic" });
+              </script>                            
+            </div>
+      </div>
+
+      <div class="center padding-sm">
+          <label class="radio-btn">
+              <input type="radio" name="deposit-type" checked="checked">
+              <span class="radio-btn__btn">В тенге</span>
+          </label>
+          <label class="radio-btn">
+              <input type="radio" name="deposit-type">
+              <span class="radio-btn__btn">В рублях</span>
+          </label>
+          <label class="radio-btn">
+              <input type="radio" name="deposit-type">
+              <span class="radio-btn__btn">В долларах</span>
+          </label>
+          <label class="radio-btn">
+              <input type="radio" name="deposit-type">
+              <span class="radio-btn__btn">В другой валюте</span>
+          </label>
+      </div>
+
+      <div class="landing__form__block landing__form__block_half deposit-landing__form__block">
+          <div class="input"><label class="input__label">
+              <span class="input__title input_required">ФИО</span>
+              <input type="text" name="deposit-name" placeholder="Иванов Иван Иванович" required>
+          </label></div>
+      </div> 
+
+      <div class="landing__form__block landing__form__block_half deposit-landing__form__block">
+          <div class="input"><label class="input__label">
+              <span class="input__title input_required">Телефон</span>
+              <input type="text" class="input-phone" name="deposit-phone" placeholder="+7 777 777-77-77" required>
+          </label></div>
+      </div>
+
+      <div class="landing__form__block landing__form__block_half deposit-landing__form__block">
+          <div class="input"><label class="input__label">
+              <span class="input__title">Email</span>
+              <input type="text" name="deposit-email" placeholder="example@mail.ru">
+          </label></div>
+      </div>
+
+      <div class="landing__form__block landing__form__block_half deposit-landing__form__block_full">
+          <div class="input"><label class="input__label">
+              <span class="input__title">ИИН</span>
+              <input type="text" class="input-pin" name="deposit-pin" placeholder="000 000 000 000" required>
+          </label></div>
+      </div>
+
+      <div class="landing__form__submit center padding-sm">
+          <input type="submit" class="btn btn-huge btn-blue" value="Отправить заявку"><br />
+          <label class="landing__form__agree form-check__label"><input type="checkbox" required>
+            <span></span>Согласен с <a href="#">условиями</a>
+          </label>
+      </div>
+
+
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--       <div class="row">
+
+          <div class="col-xs-12 col-md-6">
+              <div class="deposit-landing__form__sum deposit-landing__form__block">
+                    <b>Сумма</b>
+                    <div class="deposit-landing__form__sum__slider slider-padding">
+
+                      <div class="layout-slider">
+                        <input id="insuranceLandingSumSlider" type="slider" name="area" value="0;10000000" />
+                      </div>
+
+                      <script type="text/javascript" charset="utf-8">
+                        jQuery("#insuranceLandingSumSlider").slider({ from: 0, to: 10000000, scale: [0, 10000000], limits: false, step: 1, dimension: ' тг', skin: "round_plastic" });
+                      </script>
+                      
+                    </div>
+              </div>
+          </div>
+
+          <div class="col-xs-12 col-md-6">
+              <div class="deposit-landing__form__period deposit-landing__form__block">
+                    <b>Срок</b>
+                    <div class="deposit-landing__form__period__slider slider-padding">
+                      <div class="layout-slider">
+                        <input id="insuranceLandingPeriodSlider" type="slider" name="area" value="0;120" />
+                      </div>
+                      <script type="text/javascript" charset="utf-8">
+                        jQuery("#insuranceLandingPeriodSlider").slider({ from: 0, to: 120, scale: [0, 120], limits: false, step: 1, dimension: ' месяцев', skin: "round_plastic" });
+                      </script>                            
+                    </div>
+              </div>
+          </div>
+
+      </div>
+
+        <div class="deposit-landing__form__types padding-sm row">
+            <label class="radio-btn col-xs-12 col-md-6 col-lg-3">
+                <input type="radio" name="deposit-type" checked="checked">
+                <span class="radio-btn__btn btn btn-sm btn-blue">В тенге</span>
+            </label>
+            <label class="radio-btn col-xs-12 col-md-6 col-lg-3">
+                <input type="radio" name="deposit-type">
+                <span class="radio-btn__btn btn btn-sm btn-blue">В рублях</span>
+            </label>
+            <label class="radio-btn col-xs-12 col-md-6 col-lg-3">
+                <input type="radio" name="deposit-type">
+                <span class="radio-btn__btn btn btn-sm btn-blue">В долларах</span>
+            </label>
+            <label class="radio-btn col-xs-12 col-md-6 col-lg-3">
+                <input type="radio" name="deposit-type">
+                <span class="radio-btn__btn btn btn-sm btn-blue">В другой валюте</span>
+            </label>
+        </div>
+
+        <div class="deposit-landing__form__form deposit-landing__form__form__ogpo">
+              <div class="row">
+                  <div class="col-xs-12 col-md-6">
+                      <div class="deposit-landing__form__name">
+                          <label class="input full-width">
+                              <span>ФИО</span>
+                              <input type="text" name="insurance-name" placeholder="ФИО">
+                          </label>
+                      </div>
+                  </div>   
+                  <div class="col-xs-12 col-md-6">
+                      <div class="deposit-landing__form__pin">
+                          <label class="input full-width">
+                              <span>ИИН</span>
+                              <input type="text" class="input-pin" name="insurance-pin" placeholder="000 000 000 000">
+                          </label>
+                      </div>
+                  </div>   
+              </div>
+              <div class="row"> 
+                  <div class="col-xs-12 col-md-6">
+                      <div class="deposit-landing__form__phone">
+                          <label class="input full-width">
+                              <span class="input_required">Телефон</span>
+                              <input type="text" class="input-phone" name="insurance-phone" placeholder="+7 777 777-77-77">
+                          </label>
+                      </div>
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                      <div class="deposit-landing__form__email">
+                          <label class="input full-width">
+                              <span>Email</span>
+                              <input type="text" name="insurance-email" placeholder="example@mail.ru">
+                          </label>
+                      </div>
+                  </div>
+              </div>
+              <div class="deposit-landing__form__submit center padding-sm">
+                  <input type="submit" class="btn btn-huge btn-blue" value="Отправить заявку"><br />
+                  <label class="deposit-landing__form__agree form-check__label"><input type="checkbox">
+                    <span></span>Согласен с <a href="#">условиями</a>
+                  </label>
+              </div>
+        </div>
+
+
+ -->
