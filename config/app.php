@@ -179,8 +179,6 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
-		Backpack\Base\BaseServiceProvider::class,
-
     ],
 
     /*
